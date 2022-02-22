@@ -12,10 +12,7 @@ def textjson():
 
                 if ":" not in line:
                     continue
-
                 description = line.strip().split(':', 1)
-                #if "-" not in line:
-                #
                 x.append(description[0])
                 y.append(description[1])
 
@@ -26,10 +23,7 @@ def textjson():
         for i in range(j):
             dict2[x[i]] = y[i]
         i += 1
-
-            #print(dict2)
         if (i%4)==0:
-            #print(i)
             u = 'user' + str(l)
             dict1[u] = dict2
             l+=1
